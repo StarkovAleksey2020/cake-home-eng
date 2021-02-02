@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake-home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a id="button"></a>
+    <header class="header-thankyou">
+      <div class="header-wrapper-thankyou">
+        <nav class="header-navbar-thankyou">
+          <div class="header-navbar-logo header-navbar-logo--thankyou">
+            <a href="index.html" class="header-logo">
+              <h3 class="header-logo-title">Лакомка</h3>
+            </a>
+          </div>
+          <!-- /.header-navbar-logo -->
+          <ul class="header-menu-thankyou">
+            <li class="header-menu-item header-menu-item--thankyou">
+              <a href="#footer" class="header-menu-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.header-navbar -->
+      </div>
+      <!-- /.header-wrapper -->
+    </header>
+    <section class="main">
+      <div class="main-wrapper-thankyou">
+        <div class="thankyou">
+          <div class="thankyou__text-block">
+            <h1 class="thankyou-title">Спасибо !</h1>
+            <p class="thankyou-subtitle">Ваше сообщение отправлено</p>
+            <p class="thankyou-text">
+              Я свяжусь с Вами в самое ближайшее время
+            </p>
+            <button
+              class="thankyou-button"
+              onclick="location.href='index.html';"
+            >
+              Вернуться
+            </button>
+          </div>
+          <!-- /.header-main__text-block -->
+        </div>
+        <!-- /.header-main -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.main -->
+
+    <section id="footer" class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-address">
+          <h2 class="footer-title">Наш адрес:</h2>
+          <p class="footer-text">Иркутский район, с. Хомутово</p>
+        </div>
+        <!-- /.footer-address -->
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты:</h2>
+          <div class="footer-contacts-phone">
+            <a
+              href="tel:8800"
+              class="footer-contacts-phone footer-contacts-phone__link"
+            >
+              <img
+                src="img/phone-call.svg"
+                alt="Icon: phone-call"
+                class="footer-contacts-phone__link footer-contacts-phone__link--icon"
+              />
+              <span
+                class="footer-contacts-phone__link footer-contacts-phone__link--num"
+                >+7 (914) 123 45 67</span
+              >
+            </a>
+          </div>
+          <!-- /.footer-contacts-phone -->
+          <div class="footer-contacts-email">
+            <a
+              href="mailto:lakomka@gmail.com"
+              class="footer-contacts-email footer-contacts-email__link"
+            >
+              <img
+                src="img/email.svg"
+                alt="Icon: email"
+                class="footer-contacts-email__link footer-contacts-email__link--icon"
+              />
+              <span
+                class="footer-contacts-email__link footer-contacts-email__link--email"
+                >lakomka@gmail.com</span
+              >
+            </a>
+          </div>
+          <!-- /.footer-contacts-email -->
+        </div>
+        <!-- /.footer-contacts -->
+        <div class="footer-block">
+          <div class="footer-form">
+            <h3 class="footer-subtitle">Форма обратной связи</h3>
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  name="name"
+                  required
+                  minlength="2"
+                  placeholder="Имя *"
+                />
+              </div>
+              <!-- /.footer__input-group -->
+              <div class="footer__input-group footer__input-group--phone">
+                <input
+                  id="target"
+                  type="tel"
+                  class="input footer__input phoneInput"
+                  name="phone"
+                  placeholder="Телефон *"
+                />
+              </div>
+              <!-- /.footer__input-group -->
+              <textarea
+                cols="30"
+                rows="10"
+                class="message footer__message"
+                name="message"
+                placeholder="Сообщение"
+              ></textarea>
+              <button class="button footer__button" type="submit">
+                Отправить
+              </button>
+              <span class="footer__info">* - обязательное поле</span>
+            </form>
+          </div>
+          <!-- /.footer-form -->
+        </div>
+        <!-- /.footer-contacts-block -->
+      </div>
+    </section>
+    <!-- /.footer -->
+    <script>
+      window.onload = function () {
+        document.body.classList.add("loaded_hiding");
+        window.setTimeout(function () {
+          document.body.classList.add("loaded");
+          document.body.classList.remove("loaded_hiding");
+        }, 500);
+      };
+    </script>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/0.0.14/i18next-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/2.0.22/i18next.min.js"></script>
+    <script src="js/bgscroll.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

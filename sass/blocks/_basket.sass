@@ -1,0 +1,316 @@
+.basket
+  width: 100%
+  height: 90vh
+  position: relative
+  &-breadcrumbs
+    &-block
+      max-width: 1440px
+      width: 80%
+      margin: 0 auto
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    &-home
+      width: 40px
+      min-height: 30px
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      font-size: 12px
+      line-height: 16px
+      margin: 10px 0
+      background: inherit
+      padding: 0
+      outline: none
+      border: none
+      &::after
+        content: '/'
+        margin-right: 8px
+        filter: brightness(0) saturate(100%) invert(49%) sepia(9%) saturate(721%) hue-rotate(169deg) brightness(98%) contrast(90%)
+      &:hover
+        filter: brightness(0) saturate(100%) invert(81%) sepia(81%) saturate(1486%) hue-rotate(317deg) brightness(89%) contrast(78%)
+    &-current
+      font-size: 14px
+      line-height: 16px
+      filter: brightness(0) saturate(100%) invert(49%) sepia(9%) saturate(721%) hue-rotate(169deg) brightness(98%) contrast(90%)
+  &-image
+    width: 250px
+    height: auto
+    margin: 0 auto
+  &-block
+    width: 80%
+    margin: 50px auto 0
+    padding: 0
+  &-wrapper
+    max-width: 1440px
+    width: 80%
+    min-height: 500px
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 0
+    flex-wrap: wrap
+    margin: 0 auto
+  &-list
+    width: 500px
+    min-height: 600px
+    padding: 0
+    margin: 0
+    background: #ffffff
+    color: #000000
+  &-link
+    color: #000000
+  &-title
+    font-size: 32px
+    line-height: 36px
+    margin-bottom: 20px
+  &-subtitle
+    font-size: 26px
+    line-height: 28px
+  &-item
+    font-size: 20px
+    line-height: 24px
+    display: flex
+    align-items: center
+    margin-bottom: 8px
+    &-block
+      width: 100%
+    &-name
+      width: 50%
+    &-amount
+      width: 10%
+      display: flex
+      justify-content: center
+    &-price
+      width: 80px
+      display: flex
+      justify-content: flex-end
+    &-cost
+      width: 40%
+      display: flex
+      justify-content: flex-end
+      &--total
+        width: 100%
+        display: flex
+        justify-content: flex-end
+    &-total
+      width: 100%
+      margin-bottom: 20px
+  &-divider
+    &-total
+      margin-bottom: 15px
+  &-button
+    &-block
+      max-width: 1440px
+      width: 80%
+      margin: 0 auto
+      display: flex
+      justify-content: start
+      margin-bottom: 20px
+    &-back
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      background: inherit
+      outline: none
+      border: none
+      box-shadow: none
+      cursor: pointer
+      margin-right: 15px
+      text-align: end
+      &:hover
+        background: #dadada
+    &-order
+      width: 30%
+      min-height: 50px
+      background-color: #CD9D55
+      color: #ffffff
+      border-radius: 8px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 20px
+      display: flex
+      align-items: center
+      text-align: center
+      justify-content: center
+      outline: none
+      border: none
+      cursor: pointer
+      margin-bottom: 10px
+    &:hover
+      background-color: #A67122
+    &-clear
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      background: inherit
+      outline: none
+      border: none
+      box-shadow: none
+      cursor: pointer
+      margin-right: 15px
+      text-align: end
+      &:hover
+        background: #dadada
+    &-left, &-right
+      width: 30px
+      height: 30px
+      background: #e6e6e6
+      outline: none
+      border: none
+      color: #000000
+      cursor: pointer
+      border-radius: 50%
+      &:hover
+        background: #b1b1b1
+    &-icon
+      width: 20px
+      height: 20px
+      cursor: pointer
+      margin-right: 8px
+      filter: brightness(0) saturate(100%) invert(49%) sepia(9%) saturate(721%) hue-rotate(169deg) brightness(98%) contrast(90%)
+  &-header
+    width: 100%
+    min-height: 50px
+    background-color: white
+    box-shadow: rgba(0,0,0,.13) 0 4px 16px
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 40
+    &-wrapper
+      width: 80%
+      min-height: 50px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 0 auto
+    &-navbar
+    &-background
+    &-logo
+      font-family: 'Marck Script', cursive
+      font-size: 32px
+      line-height: 36px
+      text-decoration: none
+      color: #FFF
+      padding: 0
+      margin: 0
+    &-link
+      margin: 0
+      padding: 0
+      text-decoration: none
+      color: #000000
+  &-contacts
+    width: 50%
+    min-height: 140px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    &-phone
+      display: flex
+      flex-direction: row
+      justify-content: start
+      align-items: center
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 26px
+      color: #FFFFFF
+      padding: 0
+      margin: 0
+      z-index: 100
+      position: relative
+      &__link
+        &--icon
+          width: 20px
+          height: 20px
+          margin: 0 5px 0 0
+          filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(21%) hue-rotate(227deg) brightness(98%) contrast(98%)
+        &--num
+          filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(21%) hue-rotate(227deg) brightness(98%) contrast(98%)
+  &-footer
+    background: #683b2f
+    width: 100%
+    min-height: 120px
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-wrapper
+      max-width: 1440px
+      width: 90%
+      min-height: 120px
+      position: relative
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      margin: 0 auto
+      padding: 10px
+      flex-wrap: wrap
+    &-address
+      width: 100%
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    &-title
+      margin: 0 10px 0 0
+      font-size: 24px
+      line-height: 26px
+      color: #FFFFFF
+    &-text
+      font-size: 20px
+      line-height: 22px
+      color: #FFFFFF
+      margin: 0
+      padding: 0
+    &-contacts
+      width: 100%
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    &-phone
+      margin-left: 10px
+      text-decoration: none
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      &__link
+        &--icon
+          width: 26px
+          height: 20px
+          filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(0%) hue-rotate(225deg) brightness(101%) contrast(101%)
+          cursor: pointer
+          margin-right: 8px
+        &--num
+          font-size: 18px
+          text-decoration: none
+          color: #FFFFFF
+          cursor: pointer
+    &-email
+      margin-left: 10px
+      text-decoration: none
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      &__link
+        &--icon
+          width: 26px
+          height: 20px
+          filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(0%) hue-rotate(225deg) brightness(101%) contrast(101%)
+          cursor: pointer
+          margin-right: 8px
+        &--email
+          font-size: 18px
+          text-decoration: none
+          color: #FFFFFF
+          cursor: pointer

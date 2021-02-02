@@ -1,0 +1,295 @@
+*
+  box-sizing: border-box
+body
+  font-family: 'Marmelad', sans-serif
+  background-color: $background-color
+  /*background-image: linear-gradient(43deg, #FFFFFF 0%, #FFF5EE 46%, #FFFFFF 100%)*/
+.main
+  &-wrapper
+    max-width: 1440px
+    width: 70%
+    min-height: 400px
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    padding: 20px 40px
+    flex-wrap: wrap
+    &-thankyou
+      width: 90%
+      margin: 0 auto
+  &-block
+    &-top
+      width: 100%
+      min-height: 1500px
+      position: absolute
+      top: -440px
+      left: 0
+      right: 0
+      background-image: url('../img/main-top.jpg')
+      background-repeat: no-repeat
+      background-size: 100% auto
+      background-position: top
+      z-index: 1
+    &-bottom
+      width: 100%
+      min-height: 60%
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      background-image: url('../img/main-bottom.png')
+      background-repeat: no-repeat
+      background-size: 100% auto
+      background-position: bottom
+      z-index: 2
+  &-top
+    position: absolute
+    top: -800px
+    width: 100%
+    z-index: 19
+    &-mobile
+      display: none
+  &-bottom
+    position: absolute
+    bottom: -80px
+    width: 100%
+    z-index: 20
+  &-title
+    font-style: normal
+    font-weight: normal
+    font-size: 50px
+    line-height: 38px
+    color: #FFFFFF
+    margin: 0 0 25px 0
+    z-index: 21
+.shadow
+  position: absolute
+  bottom: 0
+  height: 300px
+  width: 100%
+  left: 0
+  z-index: 20
+  opacity: 0
+  /*background-color: blue*/
+  background: linear-gradient(to top, #3c2928, transparent)
+.black-10
+  color: #E7E6DD
+.black-20
+  color: #B9B8B1
+.black-30
+  color: #94938E
+.black-40
+  color: #767672
+.black-50
+  color: #5E5E5B
+.black-60
+  color: #4B4B49
+.black-70
+  color: #3C3C3A
+.black-80
+  color: #30302E
+.black-90
+  color: #1E1E1E
+.black-100
+  color: #000000
+.hiden
+  display: none!important
+.menu
+  &-btn
+    display: none
+    width: 30px
+    height: 40px
+    outline: none
+    z-index: 100
+    cursor: pointer
+    border: none
+    background-color: inherit
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7427%) hue-rotate(23deg) brightness(118%) contrast(118%)
+    &__line
+      width: 22px
+      height: 2px
+      /*color: #FFFFFF*/
+  &-basket
+    display: flex
+    width: 24px
+    height: 24px
+    outline: none
+    z-index: 100
+    cursor: pointer
+    border: none
+    background-color: inherit
+    text-decoration: none
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2484%) hue-rotate(300deg) brightness(104%) contrast(70%)
+    &-block
+      width: 50px
+      height: 24px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      top: 0
+      right: 0
+    &-icon
+      width: 20px
+      height: 20px
+      margin-right: 5px
+    &-count
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      background: #be8228
+      color: #FFFFFF
+      vertical-align: super
+      font-size: 14px
+      line-height: 20px
+      z-index: 30
+      &-block
+        width: 20px
+        height: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+  &-button
+    display: none
+    /*background-color: inherit*/
+    &__line
+      width: 22px
+      height: 2px
+      color: #FFFFFF
+  &-close
+    display: none
+    width: 40px
+    height: 40px
+    outline: none
+    z-index: 100
+    cursor: pointer
+    border: none
+    background-color: inherit
+    &-image
+      filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
+.form
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 10px 1px 0 5px
+  margin-bottom: 75px
+.input
+  background-color: #fff
+  border-radius: 4px
+  border: none
+  padding: 0 8px
+  height: 50px
+input[type=checkbox]
+  width: 1em
+  font-size: inherit
+  margin: 0
+  transform: translateX(-9999px)
+input[type=checkbox] + label:before
+  position: absolute
+  content: ''
+  left: -1.3em
+  top: 7px
+  width: 1em
+  height: 1em
+  margin: 0
+  border: none
+  border-radius: 10%
+  background-color: #bbbbbb
+  cursor: pointer
+input[type=checkbox] + label:after
+  position: absolute
+  content: ''
+  left: -1.3em
+  top: 7px
+  width: 1em
+  height: 1em
+  margin: 0
+  border: none
+  background-color: white
+  border-radius: 10%
+  transform: scale(0.8)
+  cursor: pointer
+input[type=checkbox]:checked + label:before
+  position: absolute
+  content: ''
+  left: -1.3em
+  top: 7px
+  width: 1em
+  height: 1em
+  margin: 0
+  border: none
+  background-color: #3b88fd
+  cursor: pointer
+input[type=checkbox]:checked + label:after
+  position: absolute
+  content: "\2713"
+  left: -1.3em
+  top: 7px
+  width: 1em
+  height: 1em
+  margin: 0
+  border: none
+  background-color: #3b88fd
+  border-radius: 10%
+  color: white
+  text-align: center
+  line-height: 1
+  cursor: pointer
+input[type=checkbox]:focus + label:before
+  border: 0.1em solid #8eb9fb
+  margin-top: -0.1em
+  margin-left: -0.1em
+  box-shadow: 0 0 0.2em #3b88fd
+.big
+  font-size: 50px
+label
+  position: relative
+  line-height: 1.4
+.message
+  width: 43%
+  background-color: #fff
+  border-radius: 4px
+  padding: 8px
+  border: none
+.invalid
+  color: #FFFFFF
+  border-bottom: 1px solid red
+label.invalid
+  position: absolute
+  bottom: -12px
+  font-size: 12px
+  line-height: 12px
+  border-bottom: none
+#button
+  display: inline-block
+  background-color: $quote
+  width: 50px
+  height: 50px
+  text-align: center
+  border-radius: 4px
+  position: fixed
+  bottom: 30px
+  right: 10%
+  transition: background-color .3s, opacity .5s, visibility .5s
+  opacity: 0
+  visibility: hidden
+  z-index: 1000
+  &::after
+    content: "\f077"
+    font-family: FontAwesome
+    font-weight: normal
+    font-style: normal
+    font-size: 2em
+    line-height: 50px
+    color: #fff
+  &:hover
+    cursor: pointer
+    background-color: #333
+  &:active
+    background-color: #555
+  &.show
+    opacity: 1
+    visibility: visible

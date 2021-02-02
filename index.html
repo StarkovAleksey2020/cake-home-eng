@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake-home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x"></script>
+    <script src="https://unpkg.com/vuex@3.6.0/dist/vuex.js"></script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <!-- Back to top button -->
+    <a id="button"></a>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="main-block-top" data-speed="1"></div>
+        <nav class="header-navbar">
+          <div class="header-background"></div>
+          <!-- /.header-background -->
+          <div class="header-navbar-logo">
+            <div class="menu-btn">
+              <svg class="menu-btn-icon">
+                <use xlink:href="img/icons.svg#menu"></use>
+              </svg>
+            </div>
+            <!-- /.menu-btn -->
+            <button class="menu-close hiden">
+              <img
+                src="img/close.svg"
+                alt="Icon: close"
+                class="menu-close-image"
+              />
+            </button>
+
+            <a href="index.html" class="header-logo">
+              <h3 class="header-logo-title">Лакомка</h3>
+            </a>
+          </div>
+          <!-- /.header-navbar-logo -->
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="#about" class="header-menu-link">О себе</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#cake" class="header-menu-link">Торты</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#bakery" class="header-menu-link">Выпечка</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#footer" class="header-menu-link">Контакты</a>
+            </li>
+          </ul>
+          <div id="basket" class="header-basket"></div>
+        </nav>
+        <!-- /.header-navbar -->
+        <h1 class="main-title translate" data-speed="0.5">
+          Вкуснейшие торты <br />и выпечка на заказ
+        </h1>
+        <img
+          src="img/main-bottom.png"
+          class="main-bottom translate"
+          data-speed="0.15"
+          alt="main image bottom"
+        />
+        <div class="navbar-bottom">
+          <div class="container-navbar container-navbar__bottom">
+            <ul class="navbar-menu navbar-menu__bottom">
+              <li class="navbar-menu__item navbar-menu__item--bottom">
+                <a
+                  href="#about"
+                  class="navbar-menu__link navbar-menu__link--bottom"
+                  >О себе</a
+                >
+              </li>
+              <li class="navbar-menu__item navbar-menu__item--bottom">
+                <a
+                  href="#cake"
+                  class="navbar-menu__link navbar-menu__link--bottom"
+                  >Торты</a
+                >
+              </li>
+              <li class="navbar-menu__item navbar-menu__item--bottom">
+                <a
+                  href="#bakery"
+                  class="navbar-menu__link navbar-menu__link--bottom"
+                  >Выпечка</a
+                >
+              </li>
+              <li class="navbar-menu__item navbar-menu__item--bottom">
+                <a
+                  href="#footer"
+                  class="navbar-menu__link navbar-menu__link--bottom"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <!-- /.navbar-menu -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.navbar-bottom -->
+      </div>
+      <!-- /.header-wrapper -->
+      <div class="shadow"></div>
+      <!-- /.shadow -->
+    </header>
+    <section id="about" class="about">
+      <div class="about-wrapper">
+        <h2 class="about-title">Добро пожаловать в кондитерскую Лакомка!</h2>
+        <div class="about-block">
+          <div class="about-info-chef">
+            <img src="img/chef.jpg" class="about-info-image" alt="Chef" />
+            <span class="about-info-name">Гулина Инна</span>
+            <span class="about-info-position">Шеф-кондитер ЛАКОМКИ</span>
+          </div>
+          <!-- /.about-info-chef -->
+
+          <div class="about-info">
+            <p class="about-info-text">
+              «Я всегда мечтала создавать маленькие кондитерские шедевры - моя
+              мечта сбылась. Приглашаю Вас ознакомиться с каталогом тортов и
+              выпечки и сделать заказ.»
+            </p>
+            <p class="about-info-text about-info-history">
+              Гулина Инна - основатель и шеф-кондитер Лакомки. Карьеру кондитера
+              начала в 2011 году. После признания качества продукции друзьями и
+              знакомыми приступила к выполнению заказов. В 2020 году подтвердила
+              квалификацию пройдя обучение на мастера-кондитера.
+            </p>
+          </div>
+          <!-- /.about-info -->
+          <div class="training-certificates-block">
+            <img
+              src="img/cert-1.jpeg"
+              alt="sertificate one"
+              class="training-certificate training-certificate--1"
+              data-toggle="modal-certificate"
+            />
+            <img
+              src="img/cert-2.jpeg"
+              alt="sertificate two"
+              class="training-certificate training-certificate--2"
+              data-toggle="modal-certificate"
+            />
+            <img
+              src="img/cert-3.jpeg"
+              alt="sertificate three"
+              class="training-certificate training-certificate--3"
+              data-toggle="modal-certificate"
+            />
+          </div>
+          <!-- /.training-certificates -->
+        </div>
+        <!-- /.about-block -->
+      </div>
+      <!-- /.about-wrapper -->
+    </section>
+    <!-- /.about -->
+    <section id="cake" class="cake">
+      <div class="cake-wrapper">
+        <h2 class="cake-title">Торты</h2>
+        <div class="cake-card">
+          <div class="cake-amount-block hiden">
+            <button class="cake-amount-left"><</button>
+            <span class="cake-amount">0</span>
+            <button class="cake-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="cake-image-block">
+            <img src="img/cake-1.jpg" alt="Cake one" class="cake-image" />
+          </div>
+          <!-- /.cake-image-block -->
+          <div class="cake-info">
+            <span class="cake-name">«Торжество»</span>
+            <span class="cake-price">1400.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cake-button-block">
+            <button class="cake-button-info">Подробнее</button>
+            <div id="cake-1"></div>
+          </div>
+          <!-- /.cake-button-block -->
+        </div>
+        <!-- /.cake-card -->
+        <div class="cake-card">
+          <div class="cake-amount-block hiden">
+            <button class="cake-amount-left"><</button>
+            <span class="cake-amount">0</span>
+            <button class="cake-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="cake-image-block">
+            <img src="img/cake-3.jpg" alt="Cake one" class="cake-image" />
+          </div>
+          <!-- /.cake-image-block -->
+          <div class="cake-info">
+            <span class="cake-name">«Одиссей»</span>
+            <span class="cake-price">1200.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cake-button-block">
+            <button class="cake-button-info">Подробнее</button>
+            <div id="cake-2"></div>
+          </div>
+          <!-- /.cake-button-block -->
+        </div>
+        <!-- /.cake-card -->
+        <div class="cake-card">
+          <div class="cake-amount-block hiden">
+            <button class="cake-amount-left"><</button>
+            <span class="cake-amount">0</span>
+            <button class="cake-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="cake-image-block">
+            <img src="img/cake-5.jpg" alt="Cake one" class="cake-image" />
+          </div>
+          <!-- /.cake-image-block -->
+          <div class="cake-info">
+            <span class="cake-name">«Восторг»</span>
+            <span class="cake-price">1000.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cake-button-block">
+            <button class="cake-button-info">Подробнее</button>
+            <div id="cake-3"></div>
+          </div>
+          <!-- /.cake-button-block -->
+        </div>
+        <!-- /.cake-card -->
+        <div class="cake-card">
+          <div class="cake-amount-block hiden">
+            <button class="cake-amount-left"><</button>
+            <span class="cake-amount">0</span>
+            <button class="cake-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="cake-image-block">
+            <img src="img/cake-6.jpg" alt="Cake one" class="cake-image" />
+          </div>
+          <!-- /.cake-image-block -->
+          <div class="cake-info">
+            <span class="cake-name">«Юбиляр»</span>
+            <span class="cake-price">1000.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cake-button-block">
+            <button class="cake-button-info">Подробнее</button>
+            <div id="cake-4"></div>
+          </div>
+          <!-- /.cake-button-block -->
+        </div>
+        <!-- /.cake-card -->
+        <div class="cake-card">
+          <div class="cake-amount-block hiden">
+            <button class="cake-amount-left"><</button>
+            <span class="cake-amount">0</span>
+            <button class="cake-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="cake-image-block">
+            <img src="img/cake-8.jpg" alt="Cake one" class="cake-image" />
+          </div>
+          <!-- /.cake image-block -->
+          <div class="cake-info">
+            <span class="cake-name">«Ассорти»</span>
+            <span class="cake-price">1300.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cake-button-block">
+            <button class="cake-button-info">Подробнее</button>
+            <div id="cake-5"></div>
+          </div>
+          <!-- /.cake-button-block -->
+        </div>
+        <!-- /.cake-card -->
+        <div class="cake-card">
+          <div class="cake-amount-block hiden">
+            <button class="cake-amount-left"><</button>
+            <span class="cake-amount">0</span>
+            <button class="cake-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="cake-image-block">
+            <img src="img/cake-2.jpg" alt="Cake one" class="cake-image" />
+          </div>
+          <!-- /.cake-image-block -->
+          <div class="cake-info">
+            <span class="cake-name">«Хоровод»</span>
+            <span class="cake-price">1300.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cake-button-block">
+            <button class="cake-button-info">Подробнее</button>
+            <div id="cake-6"></div>
+          </div>
+          <!-- /.cake-button-block -->
+        </div>
+        <!-- /.cake-card -->
+        <div class="cake-card">
+          <div class="cake-amount-block hiden">
+            <button class="cake-amount-left"><</button>
+            <span class="cake-amount">0</span>
+            <button class="cake-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="cake-inage-block">
+            <img src="img/cake-4.jpg" alt="Cake one" class="cake-image" />
+          </div>
+          <!-- /.cake-inage-block -->
+          <div class="cake-info">
+            <span class="cake-name">«Карьер»</span>
+            <span class="cake-price">1300.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cake-button-block">
+            <button class="cake-button-info">Подробнее</button>
+            <div id="cake-7"></div>
+          </div>
+          <!-- /.cake-button-block -->
+        </div>
+        <!-- /.cake-card -->
+        <div class="cake-card">
+          <div class="cake-amount-block hiden">
+            <button class="cake-amount-left"><</button>
+            <span class="cake-amount">0</span>
+            <button class="cake-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="cake-image-block">
+            <img src="img/cake-7.jpg" alt="Cake one" class="cake-image" />
+          </div>
+          <!-- /.cake-image-block -->
+          <div class="cake-info">
+            <span class="cake-name">«Бармалей»</span>
+            <span class="cake-price">1300.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cake-button-block">
+            <button class="cake-button-info">Подробнее</button>
+            <div id="cake-8"></div>
+          </div>
+          <!-- /.cake-button-block -->
+        </div>
+        <!-- /.cake-card -->
+      </div>
+      <!-- /.cake-wrapper -->
+    </section>
+    <!-- /.cake -->
+    <section id="bakery" class="bakery">
+      <div class="bakery-wrapper">
+        <h2 class="bakery-title">Выпечка</h2>
+        <div class="bakery-card">
+          <div class="bakery-amount-block hiden">
+            <button class="bakery-amount-left"><</button>
+            <span class="bakery-amount">0</span>
+            <button class="bakery-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="bakery-image-block">
+            <img
+              src="img/mini-cake-1.jpg"
+              alt="Bakery one"
+              class="bakery-image"
+            />
+          </div>
+          <!-- /.bakery-image-block -->
+          <div class="cake-info">
+            <span class="bakery-name">«Утро»</span>
+            <span class="bakery-price">80.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cabakeryke-button-block">
+            <button class="bakery-button-info">Подробнее</button>
+            <div id="bakery-1"></div>
+          </div>
+          <!-- /.bakery-button-block -->
+        </div>
+        <!-- /.bakery-card -->
+        <div class="bakery-card">
+          <div class="bakery-amount-block hiden">
+            <button class="bakery-amount-left"><</button>
+            <span class="bakery-amount">0</span>
+            <button class="bakery-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="bakery-image-block">
+            <img
+              src="img/mini-cake-2.jpg"
+              alt="Bakery one"
+              class="bakery-image"
+            />
+          </div>
+          <!-- /.bakery-image-block -->
+          <div class="cake-info">
+            <span class="bakery-name">«Титаник»</span>
+            <span class="bakery-price">80.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cabakeryke-button-block">
+            <button class="bakery-button-info">Подробнее</button>
+            <div id="bakery-2"></div>
+          </div>
+          <!-- /.bakery-button-block -->
+        </div>
+        <!-- /.bakery-card -->
+        <div class="bakery-card">
+          <div class="bakery-amount-block hiden">
+            <button class="bakery-amount-left"><</button>
+            <span class="bakery-amount">0</span>
+            <button class="bakery-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="bakery-image-block">
+            <img
+              src="img/mini-cake-3.jpg"
+              alt="Bakery one"
+              class="bakery-image"
+            />
+          </div>
+          <!-- /.bakery-image-block -->
+          <div class="cake-info">
+            <span class="bakery-name">«Нуар»</span>
+            <span class="bakery-price">90.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cabakeryke-button-block">
+            <button class="bakery-button-info">Подробнее</button>
+            <div id="bakery-3"></div>
+          </div>
+          <!-- /.bakery-button-block -->
+        </div>
+        <!-- /.bakery-card -->
+        <div class="bakery-card">
+          <div class="bakery-amount-block hiden">
+            <button class="bakery-amount-left"><</button>
+            <span class="bakery-amount">0</span>
+            <button class="bakery-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="bakery-image-block">
+            <img
+              src="img/mini-cake-4.jpg"
+              alt="Bakery one"
+              class="bakery-image"
+            />
+          </div>
+          <!-- /.bakery-image-block -->
+          <div class="cake-info">
+            <span class="bakery-name">«Блик»</span>
+            <span class="bakery-price">70.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cabakeryke-button-block">
+            <button class="bakery-button-info">Подробнее</button>
+            <div id="bakery-4"></div>
+          </div>
+          <!-- /.bakery-button-block -->
+        </div>
+        <!-- /.bakery-card -->
+        <div class="bakery-card">
+          <div class="bakery-amount-block hiden">
+            <button class="bakery-amount-left"><</button>
+            <span class="bakery-amount">0</span>
+            <button class="bakery-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="bakery-image-block">
+            <img
+              src="img/mini-cake-5.jpg"
+              alt="Bakery one"
+              class="bakery-image"
+            />
+          </div>
+          <!-- /.bakery-image-block -->
+          <div class="cake-info">
+            <span class="bakery-name">«Взлет»</span>
+            <span class="bakery-price">90.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cabakeryke-button-block">
+            <button class="bakery-button-info">Подробнее</button>
+            <div id="bakery-5"></div>
+          </div>
+          <!-- /.bakery-button-block -->
+        </div>
+        <!-- /.bakery-card -->
+        <div class="bakery-card">
+          <div class="bakery-amount-block hiden">
+            <button class="bakery-amount-left"><</button>
+            <span class="bakery-amount">0</span>
+            <button class="bakery-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="bakery-image-block">
+            <img
+              src="img/mini-cake-6.jpg"
+              alt="Bakery one"
+              class="bakery-image"
+            />
+          </div>
+          <!-- /.bakery-image-block -->
+          <div class="cake-info">
+            <span class="bakery-name">«Коралл»</span>
+            <span class="bakery-price">100.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cabakeryke-button-block">
+            <button class="bakery-button-info">Подробнее</button>
+            <div id="bakery-6"></div>
+          </div>
+          <!-- /.bakery-button-block -->
+        </div>
+        <!-- /.bakery-card -->
+        <div class="bakery-card">
+          <div class="bakery-amount-block hiden">
+            <button class="bakery-amount-left"><</button>
+            <span class="bakery-amount">0</span>
+            <button class="bakery-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="bakery-image-block">
+            <img
+              src="img/mini-cake-7.jpg"
+              alt="Bakery one"
+              class="bakery-image"
+            />
+          </div>
+          <!-- /.bakery-image-block -->
+          <div class="cake-info">
+            <span class="bakery-name">«Доффин»</span>
+            <span class="bakery-price">90.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cabakeryke-button-block">
+            <button class="bakery-button-info">Подробнее</button>
+            <div id="bakery-7"></div>
+          </div>
+          <!-- /.bakery-button-block -->
+        </div>
+        <!-- /.bakery-card -->
+        <div class="bakery-card">
+          <div class="bakery-amount-block hiden">
+            <button class="bakery-amount-left"><</button>
+            <span class="bakery-amount">0</span>
+            <button class="bakery-amount-right">></button>
+          </div>
+          <!-- /.cake-amount -->
+          <div class="bakery-image-block">
+            <img
+              src="img/mini-cake-8.jpg"
+              alt="Bakery one"
+              class="bakery-image"
+            />
+          </div>
+          <!-- /.bakery-image-block -->
+          <div class="cake-info">
+            <span class="bakery-name">«Блюз»</span>
+            <span class="bakery-price">90.00 ₽</span>
+          </div>
+          <!-- /.cake-info -->
+          <div class="cabakeryke-button-block">
+            <button class="bakery-button-info">Подробнее</button>
+            <div id="bakery-8"></div>
+          </div>
+          <!-- /.bakery-button-block -->
+        </div>
+        <!-- /.bakery-card -->
+      </div>
+      <!-- /.bakery-wrapper -->
+    </section>
+    <!-- /.bakery -->
+    <section id="footer" class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-address">
+          <h2 class="footer-title">Наш адрес:</h2>
+          <p class="footer-text">Иркутский район, с. Хомутово</p>
+        </div>
+        <!-- /.footer-address -->
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты:</h2>
+          <div class="footer-contacts-phone">
+            <a
+              href="tel:8800"
+              class="footer-contacts-phone footer-contacts-phone__link"
+            >
+              <img
+                src="img/phone-call.svg"
+                alt="Icon: phone-call"
+                class="footer-contacts-phone__link footer-contacts-phone__link--icon"
+              />
+              <span
+                class="footer-contacts-phone__link footer-contacts-phone__link--num"
+                >+7 (914) 123 45 67</span
+              >
+            </a>
+          </div>
+          <!-- /.footer-contacts-phone -->
+          <div class="footer-contacts-email">
+            <a
+              href="mailto:lakomka@gmail.com"
+              class="footer-contacts-email footer-contacts-email__link"
+            >
+              <img
+                src="img/email.svg"
+                alt="Icon: email"
+                class="footer-contacts-email__link footer-contacts-email__link--icon"
+              />
+              <span
+                class="footer-contacts-email__link footer-contacts-email__link--email"
+                >lakomka@gmail.com</span
+              >
+            </a>
+          </div>
+          <!-- /.footer-contacts-email -->
+        </div>
+        <!-- /.footer-contacts -->
+        <div class="footer-block">
+          <div class="footer-form">
+            <h3 class="footer-subtitle">Форма обратной связи</h3>
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  name="name"
+                  required
+                  minlength="2"
+                  placeholder="Имя *"
+                />
+              </div>
+              <!-- /.footer__input-group -->
+              <div class="footer__input-group footer__input-group--phone">
+                <input
+                  id="target"
+                  type="tel"
+                  class="input footer__input phoneInput"
+                  name="phone"
+                  placeholder="Телефон *"
+                />
+              </div>
+              <!-- /.footer__input-group -->
+              <textarea
+                cols="30"
+                rows="10"
+                class="message footer__message"
+                name="message"
+                placeholder="Сообщение"
+              ></textarea>
+              <button class="button footer__button" type="submit">
+                Отправить
+              </button>
+              <span class="footer__info">* - обязательное поле</span>
+            </form>
+          </div>
+          <!-- /.footer-form -->
+        </div>
+        <!-- /.footer-contacts-block -->
+      </div>
+    </section>
+    <!-- /.footer -->
+    <div class="modal-certificate">
+      <div class="modal-certificate__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal-certificate__dialog">
+        <button class="menu-close-certificate">
+          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
+        </button>
+        <div class="certificates-buttons-block">
+          <a href="#" class="certificates-buttons certificates-buttons__left">
+            <svg
+              class="certificates-buttons__image certificates-buttons__image--left"
+            >
+              <use xlink:href="img/icons.svg#arrow-prev"></use>
+            </svg>
+          </a>
+          <a href="#" class="certificates-buttons certificates-buttons__right">
+            <svg
+              class="certificates-buttons__image certificates-buttons__image--right"
+            >
+              <use xlink:href="img/icons.svg#arrow-next"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.certificates-buttons-block -->
+
+        <div class="swiper-container certificates-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="img/cert-1.jpeg"
+                alt="sertificate one"
+                class="training-certificate training-certificate__modal"
+                data-toggle="modal-certificate"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/cert-2.jpeg"
+                alt="sertificate one"
+                class="training-certificate training-certificate__modal"
+                data-toggle="modal-certificate"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/cert-3.jpeg"
+                alt="sertificate one"
+                class="training-certificate training-certificate__modal"
+                data-toggle="modal-certificate"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-certificate__dialog -->
+    </div>
+    <div class="modal-basket">
+      <div class="modal-basket__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal-basket__dialog">
+        <button class="menu-close-basket">
+          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
+        </button>
+        <div class="swiper-container basket-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="basket-modal"></div>
+              <!-- /.basket-modal -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-certificate__dialog -->
+    </div>
+
+    <script>
+      window.onload = function () {
+        document.body.classList.add("loaded_hiding");
+        window.setTimeout(function () {
+          document.body.classList.add("loaded");
+          document.body.classList.remove("loaded_hiding");
+        }, 500);
+      };
+    </script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bgscroll.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

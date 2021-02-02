@@ -1,0 +1,376 @@
+.logo
+  font-family: 'Marck Script', cursive
+  font-size: 46px
+  line-height: 38px
+  text-decoration: none
+  color: #FFF
+.header
+  width: 100%
+  height: 100vh
+  position: relative
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &-wrapper
+    max-width: 1440px
+    width: 70%
+    min-height: 920px
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-thankyou
+      max-width: 1440px
+      width: 70%
+      height: 100%
+      position: relative
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+  &-background
+    width: 100%
+    min-height: 50px
+    background-color: white
+    box-shadow: rgba(0,0,0,.13) 0 4px 16px
+    position: fixed
+    top: 0
+    left: 0
+    opacity: 0
+  &-thankyou
+    height: 80px
+    background: #683b2f
+  &-navbar
+    width: 70%
+    min-height: 50px
+    display: flex
+    top: 0
+    justify-content: space-between
+    margin: 0 0 42px 0
+    padding: 0 20px
+    align-items: center
+    z-index: 30
+    position: fixed
+    &-thankyou
+      display: flex
+      background: inherit
+    &-logo
+      width: 180px
+      display: flex
+      justify-content: center
+      align-items: center
+      &--thankyou
+        color: #FFFFFF
+    &-scrolled
+      background-color: white
+      box-shadow: rgba(0,0,0,.13) 0 4px 16px
+      color: #000
+    &-thankyou
+      background: inherit
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &-menu
+    width: 65%
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    padding: 0
+    margin: 0
+    text-align: center
+    z-index: 21
+    &-link
+      color: #FFFFFF
+      text-decoration: none
+    &__item
+      width: 120px
+      min-height: 44px
+      font-family: 'Marmelad', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 22px
+      line-height: 35px
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      cursor: pointer
+      color: $title-color
+      &:hover
+        text-shadow: 1px 1px 2px $bgr-legend, 0 0 1em $text-color
+    &-thankyou
+      color: #FFFFFF
+      list-style-type: none
+  &-main
+    display: flex
+    &__text
+      &-block
+        width: 764px
+        min-height: 465px
+        display: flex
+        flex-wrap: wrap
+        margin: 0 80px 0 0
+        padding: 0
+        align-items: flex-start
+        flex-direction: column
+        justify-content: center
+        &--upper, &--lower
+          display: none
+    &-title
+      font-style: normal
+      font-weight: normal
+      font-size: 50px
+      line-height: 38px
+      color: #FFFFFF
+      margin: 0 0 25px 0
+      /*text-shadow: 0 0 8px rgba(0,0,0,.5)*/
+    &-subtitle
+      font-style: normal
+      font-weight: 500
+      font-size: 26px
+      line-height: 38px
+      color: #063873
+      margin: 0
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 28px
+      color: $text-color
+    &-button
+      width: 285px
+      min-height: 50px
+      background-color: inherit
+      color: #ffffff
+      border-radius: 8px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 20px
+      display: flex
+      align-items: center
+      text-align: center
+      justify-content: center
+      outline: none
+      cursor: pointer
+      &:hover
+        background-color: #3982c6
+    &__photo
+      width: 273px
+      height: 310px
+      border-radius: 8px
+      margin-top: 5%
+  &-logo
+    font-family: 'Marck Script', cursive
+    font-size: 26px
+    line-height: 38px
+    text-decoration: none
+    color: #FFF
+    width: 220px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    text-decoration: none
+    &-icon
+      width: 30px
+      height: 30px
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(199deg) brightness(107%) contrast(101%)
+      margin-right: 10px
+    &-title
+      font-family: 'Marck Script', sans-serif
+      text-decoration: none
+      margin: 0
+      padding: 0
+      z-index: 21
+.navbar
+  &-top
+    min-width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    margin-top: 15px
+    &__top
+      display: flex
+      flex-direction: row
+    &__bottom
+      margin: 0
+      padding: 0
+      min-width: 60%
+    &__main
+      display: flex
+      list-style-type: none
+      align-items: center
+      justify-content: space-between
+      margin: 0 13px 0 0
+      padding: 0
+    &__item
+      margin-right: 40px
+      max-width: fit-content
+      list-style-type: none
+      &--bottom
+        margin: 0 0 26px 0
+    &__link
+      font-family: 'Inglobal', sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $primary
+      text-decoration: none
+      margin-right: 40px
+      color: #fff
+      &--bottom
+        margin: 0
+        padding: 0
+  &-exit
+    font-family: 'Inglobal', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $secondary
+    border: 2px solid $secondary
+    padding: 11px 20px
+    border-radius: 8px
+    text-decoration: none
+    /*background: #FFF*/
+    background: inherit
+    cursor: pointer
+    outline: none
+    &:hover
+      outline: none
+      color: $quote
+      border: 2px solid $quote
+  &-bottom
+    display: none
+    &--visible
+      display: block
+      height: 92%
+      position: fixed
+      top: 42px
+      left: 0
+      right: 0
+      bottom: 0
+      overflow: hidden
+      z-index: 102
+.menu
+  &-button
+    display: none
+    &__line
+      width: 22px
+      height: 2px
+      background-color: #333
+  &-close
+    display: none
+    &-image
+      filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
+.lang
+  &-block
+    width: 7%
+    display: flex
+    justify-content: space-between
+    &-bottom
+      display: none
+  &-select
+    width: 30px
+    height: 30px
+    &-image
+      border-radius: 50%
+      -webkit-transform: scale(0.9)
+      -moz-transform: scale(0.9)
+      -o-transform: scale(0.9)
+      -webkit-transition-duration: 0.5s
+      -moz-transition-duration: 0.5s
+      -o-transition-duration: 0.5s
+      opacity: 0.7
+      &:hover
+        -webkit-transform: scale(1.0)
+        -moz-transform: scale(1.0)
+        -o-transform: scale(1.0)
+        box-shadow: 0px 0px 30px gray
+        -webkit-box-shadow: 0px 0px 30px gray
+        -moz-box-shadow: 0px 0px 30px gray
+        opacity: 1
+      &:visited
+        -webkit-transform: scale(1.0)
+        -moz-transform: scale(1.0)
+        -o-transform: scale(1.0)
+        opacity: 1
+      &--pressed
+        -webkit-transform: scale(0.8)
+        -moz-transform: scale(0.8)
+        -o-transform: scale(0.8)
+        box-shadow: none
+        -webkit-box-shadow: none
+        -moz-box-shadow: none
+        opacity: 1
+.thankyou
+  height: 350px
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  align-items: center
+  &__text
+    &-block
+      width: 90%
+      min-height: 400px
+      display: flex
+      flex-wrap: wrap
+      margin: 0
+      padding: 0
+      align-items: flex-start
+      flex-direction: column
+      justify-content: center
+      &--upper, &--lower
+        display: none
+      &--thankyou
+        height: 350px
+        margin: 0 auto
+  &-title
+    font-style: normal
+    font-weight: normal
+    font-size: 50px
+    line-height: 38px
+    color: $title-color
+    margin: 0 0 25px 0
+  &-subtitle
+    font-style: normal
+    font-weight: 500
+    font-size: 26px
+    line-height: 38px
+    color: #063873
+    margin: 0
+  &-text
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 28px
+    color: $text-color
+  &-button
+    width: 285px
+    min-height: 50px
+    background-color: #CD9D55
+    color: #ffffff
+    border-radius: 8px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 20px
+    display: flex
+    align-items: center
+    text-align: center
+    justify-content: center
+    outline: none
+    cursor: pointer
+    &:hover
+      background-color: #A67122
