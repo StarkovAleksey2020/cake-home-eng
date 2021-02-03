@@ -12,13 +12,13 @@ $message = $_POST['message'];
 $listing = $_POST['listing'];
 
 // Формирование самого письма
-$title = "Новый заказ на странице Cake-Home";
+$title = "Новый Order на странице Cake-Home";
 $body = "
 <h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
 <b>Email:</b> $email<br><br>
-<b>Доставка:</b> $message<br><br>
+<b>Delivery:</b> $message<br><br>
 <b>Список:</b><br>$listing
 ";
 
@@ -37,7 +37,7 @@ try {
     $mail->Password   = '(R~Ek)_u2T3GG'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('starkovaleksey.test@gmail.com', 'Алексей Старков'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('starkovaleksey.test@gmail.com', 'Алексей Старков'); // Адрес самой почты и Name отправителя
 
     // Получатель письма
     $mail->addAddress('starkovaleksey2017@gmail.com');

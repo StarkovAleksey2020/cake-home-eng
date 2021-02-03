@@ -7,22 +7,22 @@ $(document).ready(function () {
 */
   const state = {
     cake: [
-      { code: "cake_1", name: "«Торжество»", amount: 0, price: 1400.00 },
-      { code: "cake_2", name: "«Одиссей»", amount: 0, price: 1200.00 },
-      { code: "cake_3", name: "«Восторг»", amount: 0, price: 1000.00 },
-      { code: "cake_4", name: "«Юбиляр»", amount: 0, price: 1000.00 },
-      { code: "cake_5", name: "«Ассорти»", amount: 0, price: 1300.00 },
-      { code: "cake_6", name: "«Хоровод»", amount: 0, price: 1300.00 },
-      { code: "cake_7", name: "«Карьер»", amount: 0, price: 1300.00 },
-      { code: "cake_8", name: "«Бармалей»", amount: 0, price: 1300.00 },
-      { code: "mini_cake_1", name: "«Утро»", amount: 0, price: 80.00 },
-      { code: "mini_cake_2", name: "«Титаник»", amount: 0, price: 80.00 },
-      { code: "mini_cake_3", name: "«Нуар»", amount: 0, price: 90.00 },
-      { code: "mini_cake_4", name: "«Блик»", amount: 0, price: 70.00 },
-      { code: "mini_cake_5", name: "«Взлет»", amount: 0, price: 90.00 },
-      { code: "mini_cake_6", name: "«Коралл»", amount: 0, price: 100.00 },
-      { code: "mini_cake_7", name: "«Доффин»", amount: 0, price: 90.00 },
-      { code: "mini_cake_8", name: "«Блюз»", amount: 0, price: 90.00 },
+      { code: "cake_1", name: "«Celebration»", amount: 0, price: 100.00 },
+      { code: "cake_2", name: "«Odysseus»", amount: 0, price: 110.00 },
+      { code: "cake_3", name: "«Delight»", amount: 0, price: 90.00 },
+      { code: "cake_4", name: "«Anniversary»", amount: 0, price: 120.00 },
+      { code: "cake_5", name: "«Assorted»", amount: 0, price: 130.00 },
+      { code: "cake_6", name: "«Country»", amount: 0, price: 90.00 },
+      { code: "cake_7", name: "«Career»", amount: 0, price: 130.00 },
+      { code: "cake_8", name: "«Pleasure»", amount: 0, price: 100.00 },
+      { code: "mini_cake_1", name: "«Morning»", amount: 0, price: 8.00 },
+      { code: "mini_cake_2", name: "«Titanic»", amount: 0, price: 8.00 },
+      { code: "mini_cake_3", name: "«Noir»", amount: 0, price: 9.00 },
+      { code: "mini_cake_4", name: "«Glare»", amount: 0, price: 7.00 },
+      { code: "mini_cake_5", name: "«Takeoff»", amount: 0, price: 9.00 },
+      { code: "mini_cake_6", name: "«Coral»", amount: 0, price: 10.00 },
+      { code: "mini_cake_7", name: "«Doffin»", amount: 0, price: 9.00 },
+      { code: "mini_cake_8", name: "«Blues»", amount: 0, price: 9.00 },
     ],
     count: 0,
     total: 0
@@ -61,23 +61,23 @@ $(document).ready(function () {
         basketSaved: {},
         totalCost: 0,
         cakes: [
-          { code: 'cake-1', name: "«Торжество»" },
-          { code: 'cake-2', name: "«Одиссей»" },
-          { code: 'cake-3', name: "«Восторг»" },
-          { code: 'cake-4', name: "«Юбиляр»" },
-          { code: 'cake-5', name: "«Ассорти»" },
-          { code: 'cake-6', name: "«Хоровод»" },
-          { code: 'cake-7', name: "«Карьер»" },
-          { code: 'cake-8', name: "«Бармалей»" },
-          { code: 'mini_cake-1', name: "«Утро»" },
-          { code: 'mini_cake-2', name: "«Титаник»" },
-          { code: 'mini_cake-3', name: "«Нуар»" },
-          { code: 'mini_cake-4', name: "«Блик»" },
-          { code: 'mini_cake-5', name: "«Взлет»" },
-          { code: 'mini_cake-6', name: "«Коралл»" },
-          { code: 'mini_cake-7', name: "«Доффин»" },
-          { code: 'mini_cake-8', name: "«Блюз»" },
-          { code: 'count', name: "Итого:" },
+          { code: 'cake-1', name: "«Celebration»" },
+          { code: 'cake-2', name: "«Odysseus»" },
+          { code: 'cake-3', name: "«Delight»" },
+          { code: 'cake-4', name: "«Anniversary»" },
+          { code: 'cake-5', name: "«Assorted»" },
+          { code: 'cake-6', name: "«Country»" },
+          { code: 'cake-7', name: "«Career»" },
+          { code: 'cake-8', name: "«Pleasure»" },
+          { code: 'mini_cake-1', name: "«Morning»" },
+          { code: 'mini_cake-2', name: "«Titanic»" },
+          { code: 'mini_cake-3', name: "«Noir»" },
+          { code: 'mini_cake-4', name: "«Glare»" },
+          { code: 'mini_cake-5', name: "«Takeoff»" },
+          { code: 'mini_cake-6', name: "«Coral»" },
+          { code: 'mini_cake-7', name: "«Doffin»" },
+          { code: 'mini_cake-8', name: "«Blues»" },
+          { code: 'count', name: "Total:" },
         ],
       };
     },
@@ -116,7 +116,7 @@ $(document).ready(function () {
       <div class="basket-header-wrapper">
         <div class="basket-header-logo">
           <a href="index.html" class="basket-header-link" @click="goBack">
-            Лакомка
+            Gourmet
           </a>
         </div>
         <div class="basket-contacts-phone">
@@ -131,7 +131,7 @@ $(document).ready(function () {
             />
             <span
               class="basket-contacts-phone__link basket-contacts-phone__link--num"
-              >+7 (914) 123 45 67</span
+              >+1 234-567-890</span
             >
           </a>
         </div>
@@ -144,7 +144,7 @@ $(document).ready(function () {
               <use xlink:href="img/icons.svg#home"></use>
             </svg>
           </button>
-          <span class="basket-breadcrumbs-current">Корзина</span>
+          <span class="basket-breadcrumbs-current">Basket</span>
       </div>
       <div class="basket-button-block">
           <button @click="goBack" class="basket-button-back">
@@ -159,24 +159,24 @@ $(document).ready(function () {
           </button>
       </div>
       <div class="basket-wrapper">
-        <span class="basket-title">Корзина</span>
+        <span class="basket-title">Basket</span>
         <div v-if="$store.state.total > 0" class="basket-item-block" v-for="item in $store.state.cake" :key="item.code">
           <div class="basket-item" v-if="item.amount > 0">
             <span class="basket-item-name">{{ item.name }}</span>
             <button class="basket-button-left" @click="amountDown(item)" :disabled="item.amount === 0"><</button>
             <span class="basket-item-amount">{{ item.amount }}</span>
             <button class="basket-button-right" @click="amountUp(item)">></button>
-            <span class="basket-item-cost">{{ item.amount * item.price }}.00 руб.</span>
+            <span class="basket-item-cost">{{ item.amount * item.price }}.00 $</span>
           </div>
         </div>
         <div class="basket-item basket-item-total" v-if="$store.state.total > 0">
-          <span class="basket-item-name">Итого:</span>
-          <span class="basket-item-cost basket-item-cost--total">{{$store.state.total}}.00 руб.</span><br />
+          <span class="basket-item-name">Total:</span>
+          <span class="basket-item-cost basket-item-cost--total">{{$store.state.total}}.00 $</span><br />
         </div>
         <div v-if="$store.state.total === 0" class="basket-item-block">
-          <span class="basket-item-name">Ваша корзина пуста</span><br /><br />
+          <span class="basket-item-name">Your basket is empty</span><br /><br />
         </div>
-        <button @click="makeOrder" class="basket-button-order">Заказ</button>
+        <button @click="makeOrder" class="basket-button-order">Order</button>
 
         <img
           src="img/empty-basket.jpg"
@@ -196,10 +196,10 @@ $(document).ready(function () {
     <section class="basket-footer">
       <div class="basket-footer-wrapper">
         <div class="basket-footer-address">
-          <p class="basket-footer-text">Наш адрес: Иркутский район, с. Хомутово</p>
+          <p class="basket-footer-text">20204/3 42nd Ave NE, Lake Forest Park, WA 98000, United States</p>
         </div>
         <div class="basket-footer-contacts">
-          <h2 class="basket-footer-text">Контакты:</h2>
+          <h2 class="basket-footer-text">Contacts:</h2>
           <div class="basket-footer-phone">
             <a
               href="tel:8800"
@@ -212,13 +212,13 @@ $(document).ready(function () {
               />
               <span
                 class="basket-footer-phone__link basket-footer-phone__link--num"
-                >+7 (914) 123 45 67</span
+                >+1 234-567-890</span
               >
             </a>
           </div>
           <div class="basket-footer-email">
             <a
-              href="mailto:lakomka@gmail.com"
+              href="mailto:gourmet@gmail.com"
               class="basket-footer-email basket-footer-email__link"
             >
               <img
@@ -228,7 +228,7 @@ $(document).ready(function () {
               />
               <span
                 class="basket-footer-email__link basket-footer-email__link--email"
-                >lakomka@gmail.com</span
+                >gourmet@gmail.com</span
               >
             </a>
           </div>

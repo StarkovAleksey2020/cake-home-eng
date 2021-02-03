@@ -2,22 +2,22 @@
 $(document).ready(function () {
     const state = {
     cake: [
-      { code: "cake_1", name: "«Торжество»", amount: 0, price: 1400.00 },
-      { code: "cake_2", name: "«Одиссей»", amount: 0, price: 1200.00 },
-      { code: "cake_3", name: "«Восторг»", amount: 0, price: 1000.00 },
-      { code: "cake_4", name: "«Юбиляр»", amount: 0, price: 1000.00 },
-      { code: "cake_5", name: "«Ассорти»", amount: 0, price: 1300.00 },
-      { code: "cake_6", name: "«Хоровод»", amount: 0, price: 1300.00 },
-      { code: "cake_7", name: "«Карьер»", amount: 0, price: 1300.00 },
-      { code: "cake_8", name: "«Бармалей»", amount: 0, price: 1300.00 },
-      { code: "mini_cake_1", name: "«Утро»", amount: 0, price: 80.00 },
-      { code: "mini_cake_2", name: "«Титаник»", amount: 0, price: 80.00 },
-      { code: "mini_cake_3", name: "«Нуар»", amount: 0, price: 90.00 },
-      { code: "mini_cake_4", name: "«Блик»", amount: 0, price: 70.00 },
-      { code: "mini_cake_5", name: "«Взлет»", amount: 0, price: 90.00 },
-      { code: "mini_cake_6", name: "«Коралл»", amount: 0, price: 100.00 },
-      { code: "mini_cake_7", name: "«Доффин»", amount: 0, price: 90.00 },
-      { code: "mini_cake_8", name: "«Блюз»", amount: 0, price: 90.00 },
+      { code: "cake_1", name: "«Celebration»", amount: 0, price: 100.00 },
+      { code: "cake_2", name: "«Odysseus»", amount: 0, price: 110.00 },
+      { code: "cake_3", name: "«Delight»", amount: 0, price: 90.00 },
+      { code: "cake_4", name: "«Anniversary»", amount: 0, price: 120.00 },
+      { code: "cake_5", name: "«Assorted»", amount: 0, price: 130.00 },
+      { code: "cake_6", name: "«Country»", amount: 0, price: 90.00 },
+      { code: "cake_7", name: "«Career»", amount: 0, price: 130.00 },
+      { code: "cake_8", name: "«Pleasure»", amount: 0, price: 100.00 },
+      { code: "mini_cake_1", name: "«Morning»", amount: 0, price: 8.00 },
+      { code: "mini_cake_2", name: "«Titanic»", amount: 0, price: 8.00 },
+      { code: "mini_cake_3", name: "«Noir»", amount: 0, price: 9.00 },
+      { code: "mini_cake_4", name: "«Glare»", amount: 0, price: 7.00 },
+      { code: "mini_cake_5", name: "«Takeoff»", amount: 0, price: 9.00 },
+      { code: "mini_cake_6", name: "«Coral»", amount: 0, price: 10.00 },
+      { code: "mini_cake_7", name: "«Doffin»", amount: 0, price: 9.00 },
+      { code: "mini_cake_8", name: "«Blues»", amount: 0, price: 9.00 },
       ],
     count: 0,
     total: 0
@@ -63,23 +63,23 @@ $(document).ready(function () {
         totalCost: 0,
         isDelivery: false,
         cakes: [
-          { code: 'cake-1', name: "«Торжество»" },
-          { code: 'cake-2', name: "«Одиссей»" },
-          { code: 'cake-3', name: "«Восторг»" },
-          { code: 'cake-4', name: "«Юбиляр»" },
-          { code: 'cake-5', name: "«Ассорти»" },
-          { code: 'cake-6', name: "«Хоровод»" },
-          { code: 'cake-7', name: "«Карьер»" },
-          { code: 'cake-8', name: "«Бармалей»" },
-          { code: 'mini_cake-1', name: "«Утро»" },
-          { code: 'mini_cake-2', name: "«Титаник»" },
-          { code: 'mini_cake-3', name: "«Нуар»" },
-          { code: 'mini_cake-4', name: "«Блик»" },
-          { code: 'mini_cake-5', name: "«Взлет»" },
-          { code: 'mini_cake-6', name: "«Коралл»" },
-          { code: 'mini_cake-7', name: "«Доффин»" },
-          { code: 'mini_cake-8', name: "«Блюз»" },
-          { code: 'count', name: "Итого:" },
+          { code: 'cake-1', name: "«Celebration»" },
+          { code: 'cake-2', name: "«Odysseus»" },
+          { code: 'cake-3', name: "«Delight»" },
+          { code: 'cake-4', name: "«Anniversary»" },
+          { code: 'cake-5', name: "«Assorted»" },
+          { code: 'cake-6', name: "«Country»" },
+          { code: 'cake-7', name: "«Career»" },
+          { code: 'cake-8', name: "«Pleasure»" },
+          { code: 'mini_cake-1', name: "«Morning»" },
+          { code: 'mini_cake-2', name: "«Titanic»" },
+          { code: 'mini_cake-3', name: "«Noir»" },
+          { code: 'mini_cake-4', name: "«Glare»" },
+          { code: 'mini_cake-5', name: "«Takeoff»" },
+          { code: 'mini_cake-6', name: "«Coral»" },
+          { code: 'mini_cake-7', name: "«Doffin»" },
+          { code: 'mini_cake-8', name: "«Blues»" },
+          { code: 'count', name: "Total:" },
         ],
         order: {
           name: '',
@@ -134,7 +134,7 @@ $(document).ready(function () {
       <div class="order-header-wrapper">
         <div class="order-header-logo">
           <a href="index.html" class="order-header-link" @click="goBack">
-            Лакомка
+            Gourmet
           </a>
         </div>
         <div class="order-contacts-phone">
@@ -149,7 +149,7 @@ $(document).ready(function () {
             />
             <span
               class="order-contacts-phone__link order-contacts-phone__link--num"
-              >+7 (914) 123 45 67</span
+              >+1 234-567-890</span
             >
           </a>
         </div>
@@ -163,8 +163,8 @@ $(document).ready(function () {
               <use xlink:href="img/icons.svg#home"></use>
             </svg>
           </button>
-          <span class="order-breadcrumbs-previous" @click="goBack">Корзина</span>
-          <span class="order-breadcrumbs-current">Заказ</span>
+          <span class="order-breadcrumbs-previous" @click="goBack">Basket</span>
+          <span class="order-breadcrumbs-current">Order</span>
         </div>
         <div class="order-button-block">
           <button @click="goBack" class="order-button-back">
@@ -179,11 +179,11 @@ $(document).ready(function () {
           </button>
         </div>
         <div class="order-total">
-          <span class="order-item-name">Сумма заказа:</span>
-          <span class="order-item-cost order-item-cost--total">{{$store.state.total}}.00 руб.</span>
+          <span class="order-item-name">Order amount:</span>
+          <span class="order-item-cost order-item-cost--total">{{$store.state.total}}.00 $</span>
         </div>
         <div class="order-form">
-            <h3 class="order-subtitle">Уточните Ваши данные</h3>
+            <h3 class="order-subtitle">Refine your details</h3>
             <form action="send-order.php" method="POST" class="form order__form">
               <div class="order__input-group">
                 <input
@@ -192,7 +192,7 @@ $(document).ready(function () {
                   name="name"
                   required
                   minlength="2"
-                  placeholder="Имя *"
+                  placeholder="Name *"
                   v-model="order.name"
                 />
               </div>
@@ -203,7 +203,7 @@ $(document).ready(function () {
                   type="tel"
                   class="input order__input phoneInput"
                   name="phone"
-                  placeholder="Телефон *"
+                  placeholder="Phone *"
                 />
               </div>
               <!-- /.order__input-group -->
@@ -227,7 +227,7 @@ $(document).ready(function () {
                   v-model="isDelivery"
                   @click="clearDelivery(isDelivery)"
                 />
-                <label for="delivery">Доставка</label>
+                <label for="delivery">Delivery</label>
               </div>
               <!-- /.order__input-group -->
               <textarea
@@ -237,7 +237,7 @@ $(document).ready(function () {
                 rows="10"
                 class="message order__message"
                 name="message"
-                placeholder="Адрес доставки"
+                placeholder="Delivery address"
                 v-model="order.delivery"
               ></textarea>
               <div class="order__input-group order__input-group--listing">
@@ -251,9 +251,9 @@ $(document).ready(function () {
               </div>
               <!-- /.order__input-group -->
               <button class="button footer__button" type="submit" @click="signOrder">
-                Подтвердить
+                Confirm
               </button>
-              <span class="order__info">* - обязательное поле</span>
+              <span class="order__info">* - required field</span>
             </form>
           </div>
           <!-- /.footer-form -->
@@ -270,7 +270,7 @@ $(document).ready(function () {
   }, "Please enter valid email address!");
 
   // Обработка форм
-  // Маска номера телефона
+  // Маска номера Phone
   $(".phoneInput").mask("+7 (999) 999-99-99");
 
   $('.form').each(function () {
@@ -289,16 +289,16 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Пожалуйста укажите ваше имя",
-          minlength: "Минимальная длина поля 2 символа",
+          required: "Please enter your name",
+          minlength: "Minimum field length 2 characters",
         },
         phone: {
-          required: "Пожалуйста укажите ваш номер телефона",
-          minlength: "Минимальная длина поля 10 символов",
+          required: "Please enter your Phone number",
+          minlength: "Minimum field length 10 characters",
         },
         email: {
-          required: "Пожалуйста укажите ваш email",
-          email: "Формат email - name@domain.com",
+          required: "Please enter your email",
+          email: "Email format - name@domain.com",
         },
       },
     });

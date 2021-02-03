@@ -14,8 +14,8 @@ $message = $_POST['message'];
 $title = "Новое обращение на странице Cake-Home";
 $body = "
 <h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
@@ -34,7 +34,7 @@ try {
     $mail->Password   = '(R~Ek)_u2T3GG'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('starkovaleksey.test@gmail.com', 'Алексей Старков'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('starkovaleksey.test@gmail.com', 'Алексей Старков'); // Адрес самой почты и Name отправителя
 
     // Получатель письма
     $mail->addAddress('starkovaleksey2017@gmail.com');

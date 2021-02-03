@@ -2,22 +2,22 @@
 $(document).ready(function () {
   const state = {
     cake: [
-      { code: "cake_1", name: "«Торжество»", amount: 0, price: 1400.00 },
-      { code: "cake_2", name: "«Одиссей»", amount: 0, price: 1200.00 },
-      { code: "cake_3", name: "«Восторг»", amount: 0, price: 1000.00 },
-      { code: "cake_4", name: "«Юбиляр»", amount: 0, price: 1000.00 },
-      { code: "cake_5", name: "«Ассорти»", amount: 0, price: 1300.00 },
-      { code: "cake_6", name: "«Хоровод»", amount: 0, price: 1300.00 },
-      { code: "cake_7", name: "«Карьер»", amount: 0, price: 1300.00 },
-      { code: "cake_8", name: "«Бармалей»", amount: 0, price: 1300.00 },
-      { code: "mini_cake_1", name: "«Утро»", amount: 0, price: 80.00 },
-      { code: "mini_cake_2", name: "«Титаник»", amount: 0, price: 80.00 },
-      { code: "mini_cake_3", name: "«Нуар»", amount: 0, price: 90.00 },
-      { code: "mini_cake_4", name: "«Блик»", amount: 0, price: 70.00 },
-      { code: "mini_cake_5", name: "«Взлет»", amount: 0, price: 90.00 },
-      { code: "mini_cake_6", name: "«Коралл»", amount: 0, price: 100.00 },
-      { code: "mini_cake_7", name: "«Доффин»", amount: 0, price: 90.00 },
-      { code: "mini_cake_8", name: "«Блюз»", amount: 0, price: 90.00 },
+      { code: "cake_1", name: "«Celebration»", amount: 0, price: 100.00 },
+      { code: "cake_2", name: "«Odysseus»", amount: 0, price: 110.00 },
+      { code: "cake_3", name: "«Delight»", amount: 0, price: 90.00 },
+      { code: "cake_4", name: "«Anniversary»", amount: 0, price: 120.00 },
+      { code: "cake_5", name: "«Assorted»", amount: 0, price: 130.00 },
+      { code: "cake_6", name: "«Country»", amount: 0, price: 90.00 },
+      { code: "cake_7", name: "«Career»", amount: 0, price: 130.00 },
+      { code: "cake_8", name: "«Pleasure»", amount: 0, price: 100.00 },
+      { code: "mini_cake_1", name: "«Morning»", amount: 0, price: 8.00 },
+      { code: "mini_cake_2", name: "«Titanic»", amount: 0, price: 8.00 },
+      { code: "mini_cake_3", name: "«Noir»", amount: 0, price: 9.00 },
+      { code: "mini_cake_4", name: "«Glare»", amount: 0, price: 7.00 },
+      { code: "mini_cake_5", name: "«Takeoff»", amount: 0, price: 9.00 },
+      { code: "mini_cake_6", name: "«Coral»", amount: 0, price: 10.00 },
+      { code: "mini_cake_7", name: "«Doffin»", amount: 0, price: 9.00 },
+      { code: "mini_cake_8", name: "«Blues»", amount: 0, price: 9.00 },
     ],
   count: 0,
 };
@@ -61,22 +61,22 @@ new Vue({
       basket: [],
       basketSaved: {},
       cakes: [
-        { code: 'cake-1', name: "«Торжество»" },
-        { code: 'cake-2', name: "«Одиссей»" },
-        { code: 'cake-3', name: "«Восторг»" },
-        { code: 'cake-4', name: "«Юбиляр»" },
-        { code: 'cake-5', name: "«Ассорти»" },
-        { code: 'cake-6', name: "«Хоровод»" },
-        { code: 'cake-7', name: "«Карьер»" },
-        { code: 'cake-8', name: "«Бармалей»" },
-        { code: 'mini_cake-1', name: "«Утро»" },
-        { code: 'mini_cake-2', name: "«Титаник»" },
-        { code: 'mini_cake-3', name: "«Нуар»" },
-        { code: 'mini_cake-4', name: "«Блик»" },
-        { code: 'mini_cake-5', name: "«Взлет»" },
-        { code: 'mini_cake-6', name: "«Коралл»" },
-        { code: 'mini_cake-7', name: "«Доффин»" },
-        { code: 'mini_cake-8', name: "«Блюз»" },
+        { code: 'cake-1', name: "«Celebration»" },
+        { code: 'cake-2', name: "«Odysseus»" },
+        { code: 'cake-3', name: "«Delight»" },
+        { code: 'cake-4', name: "«Anniversary»" },
+        { code: 'cake-5', name: "«Assorted»" },
+        { code: 'cake-6', name: "«Country»" },
+        { code: 'cake-7', name: "«Career»" },
+        { code: 'cake-8', name: "«Pleasure»" },
+        { code: 'mini_cake-1', name: "«Morning»" },
+        { code: 'mini_cake-2', name: "«Titanic»" },
+        { code: 'mini_cake-3', name: "«Noir»" },
+        { code: 'mini_cake-4', name: "«Glare»" },
+        { code: 'mini_cake-5', name: "«Takeoff»" },
+        { code: 'mini_cake-6', name: "«Coral»" },
+        { code: 'mini_cake-7', name: "«Doffin»" },
+        { code: 'mini_cake-8', name: "«Blues»" },
       ],
     };
   },
@@ -125,7 +125,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
     `,
 });
 new Vue({
@@ -138,7 +138,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -151,7 +151,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -164,7 +164,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -177,7 +177,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -190,7 +190,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -203,7 +203,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -216,7 +216,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -229,7 +229,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -242,7 +242,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -255,7 +255,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -268,7 +268,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -281,7 +281,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -294,7 +294,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -307,7 +307,7 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 new Vue({
@@ -320,14 +320,14 @@ new Vue({
     }
   },
   template: `
-    <button class="cake-button-contract" @click="addItems">В корзину</button>
+    <button class="cake-button-contract" @click="addItems">Add to cart</button>
   `,
 });
 
-  // анимация добавления итема в корзину
+  // анимация добавления итема Add to cart
   $(".cake-button-contract").on("click", function () {
     let cart = $(".menu-basket-block");
-    // Находим имидж карточки, которую добавляем в корзину
+    // Находим имидж карточки, которую добавляем Add to cart
     let imgToDrag = $(this)
       .parent()
       .parent()

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cake-home</title>
+    <title>Gourmet</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
@@ -41,13 +41,13 @@
         <nav class="header-navbar-thankyou">
           <div class="header-navbar-logo header-navbar-logo--thankyou">
             <a href="index.html" class="header-logo">
-              <h3 class="header-logo-title">Лакомка</h3>
+              <h3 class="header-logo-title">Gourmet</h3>
             </a>
           </div>
           <!-- /.header-navbar-logo -->
           <ul class="header-menu-thankyou">
             <li class="header-menu-item header-menu-item--thankyou">
-              <a href="#footer" class="header-menu-link">Контакты</a>
+              <a href="#footer" class="header-menu-link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -59,16 +59,14 @@
       <div class="main-wrapper-thankyou">
         <div class="thankyou">
           <div class="thankyou__text-block">
-            <h1 class="thankyou-title">Спасибо !</h1>
-            <p class="thankyou-subtitle">Ваше сообщение отправлено</p>
-            <p class="thankyou-text">
-              Я свяжусь с Вами в самое ближайшее время
-            </p>
+            <h1 class="thankyou-title">Thanks !</h1>
+            <p class="thankyou-subtitle">Your message has been sent</p>
+            <p class="thankyou-text">I will contact you as soon as possible</p>
             <button
               class="thankyou-button"
               onclick="location.href='index.html';"
             >
-              Вернуться
+              Return
             </button>
           </div>
           <!-- /.header-main__text-block -->
@@ -82,12 +80,14 @@
     <section id="footer" class="footer">
       <div class="footer-wrapper">
         <div class="footer-address">
-          <h2 class="footer-title">Наш адрес:</h2>
-          <p class="footer-text">Иркутский район, с. Хомутово</p>
+          <h2 class="footer-title">Our address:</h2>
+          <p class="footer-text">
+            20204/3 42nd Ave NE, Lake Forest Park, WA 98000, United States
+          </p>
         </div>
         <!-- /.footer-address -->
         <div class="footer-contacts">
-          <h2 class="footer-title">Контакты:</h2>
+          <h2 class="footer-title">Contacts:</h2>
           <div class="footer-contacts-phone">
             <a
               href="tel:8800"
@@ -100,14 +100,14 @@
               />
               <span
                 class="footer-contacts-phone__link footer-contacts-phone__link--num"
-                >+7 (914) 123 45 67</span
+                >+1 234-567-890</span
               >
             </a>
           </div>
           <!-- /.footer-contacts-phone -->
           <div class="footer-contacts-email">
             <a
-              href="mailto:lakomka@gmail.com"
+              href="mailto:gourmet@gmail.com"
               class="footer-contacts-email footer-contacts-email__link"
             >
               <img
@@ -117,7 +117,7 @@
               />
               <span
                 class="footer-contacts-email__link footer-contacts-email__link--email"
-                >lakomka@gmail.com</span
+                >gourmet@gmail.com</span
               >
             </a>
           </div>
@@ -126,7 +126,7 @@
         <!-- /.footer-contacts -->
         <div class="footer-block">
           <div class="footer-form">
-            <h3 class="footer-subtitle">Форма обратной связи</h3>
+            <h3 class="footer-subtitle">Feedback form</h3>
             <form action="send.php" method="POST" class="form footer__form">
               <div class="footer__input-group">
                 <input
@@ -135,7 +135,7 @@
                   name="name"
                   required
                   minlength="2"
-                  placeholder="Имя *"
+                  placeholder="Name *"
                 />
               </div>
               <!-- /.footer__input-group -->
@@ -145,7 +145,7 @@
                   type="tel"
                   class="input footer__input phoneInput"
                   name="phone"
-                  placeholder="Телефон *"
+                  placeholder="Phone *"
                 />
               </div>
               <!-- /.footer__input-group -->
@@ -154,12 +154,10 @@
                 rows="10"
                 class="message footer__message"
                 name="message"
-                placeholder="Сообщение"
+                placeholder="Message"
               ></textarea>
-              <button class="button footer__button" type="submit">
-                Отправить
-              </button>
-              <span class="footer__info">* - обязательное поле</span>
+              <button class="button footer__button" type="submit">Send</button>
+              <span class="footer__info">* - required field</span>
             </form>
           </div>
           <!-- /.footer-form -->

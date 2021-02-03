@@ -197,22 +197,22 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Пожалуйста укажите ваше имя",
-          minlength: "Минимальная длина поля 2 символа",
+          required: "Please enter your name",
+          minlength: "Minimum field length 2 characters",
         },
         phone: {
-          required: "Пожалуйста укажите ваш номер телефона",
-          minlength: "Минимальная длина поля 10 символов",
+          required: "Please enter your Phone number",
+          minlength: "Minimum field length 10 characters",
         },
         email: {
-          required: "Пожалуйста укажите ваш email",
-          email: "Формат email - name@domain.com",
+          required: "Please enter your email",
+          email: "Email format - name@domain.com",
         },
       },
     });
   });
 
-  // Маска номера телефона
+  // Маска номера Phone
   $(".phoneInput").mask("+7 (999) 999-99-99");
 
   // Модальное окно со слайдером с сертификатами
@@ -244,11 +244,13 @@ $(document).ready(function () {
 
   var certificatesSlider = new Swiper('.certificates-slider', {
     // Optional parameters
-    loop: true,
+    loop: false,
+    /*
     navigation: {
       prevEl: '.certificates-buttons__left',
       nextEl: '.certificates-buttons__right',
     },
+    */
   });
 
   // обработка нажатия ESC
